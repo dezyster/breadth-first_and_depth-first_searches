@@ -8,4 +8,4 @@ It prints all process of searching nodes on console. Then it shows info of botto
 
 Project uses smart pointers and different stl containers such as set, unordered_set, queue and stack.
 
-Nodes uses shared_ptr as pointer for neighbors, so program ensures that every node is deleted correctly.
+Nodes uses shared_ptr as pointer for neighbors, so program uses special method to ensure that every node is deleted correctly.
