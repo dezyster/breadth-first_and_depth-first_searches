@@ -3,15 +3,18 @@
 void GraphTree::addNeighborTo(int keyToFind, int keyToAdd)
 {
     const auto &existedNode{ m_search->searchByKey(m_startingPoint, keyToFind) };
-    const auto &newNeighborNode{ m_search->searchByKey(m_startingPoint, keyToAdd) };
+    if(existedNode)
+    {
+        const auto &newNeighborNode{ m_search->searchByKey(m_startingPoint, keyToAdd) };
 
-    if(newNeighborNode)
-    {
-        existedNode->addNeighbor(newNeighborNode);
-    }
-    else
-    {
-        existedNode->addNeighbor(keyToAdd, existedNode);
+        if(newNeighborNode)
+        {
+            existedNode->addNeighbor(newNeighborNode);
+        }
+        else
+        {
+            existedNode->addNeighbor(keyToAdd, existedNode);
+        }
     }
 }
 
