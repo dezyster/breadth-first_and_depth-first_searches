@@ -24,15 +24,17 @@ int main()
     std::cout << "------------------------------------------------------" << std::endl;
     std::cout << "-------------------Breadth-First search---------------" << std::endl;
 
-    testGraph.printInfoOfNode(10);
-
-    DepthFirstStrategy dfs;
-    testGraph.setStrategy(&dfs);
+    testGraph.printInfoOfNode(10); // Searches node 10 and prints its info
 
     std::cout << "------------------------------------------------------" << std::endl;
     std::cout << "--------------------Depth-First search----------------" << std::endl;
 
-    testGraph.printInfoOfNode(10);
+    DepthFirstStrategy dfs;
+    testGraph.setStrategy(&dfs);
+
+    testGraph.printInfoOfNode(10); // Searches node 10 and prints its info
+
+    std::cout << "------------------------------------------------------" << std::endl;
 
     return 0;
 }
