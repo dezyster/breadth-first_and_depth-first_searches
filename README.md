@@ -1,6 +1,6 @@
 # breadth-first_and_depth-first_searches
 
-Program builds graph like on picture below using breadth-first or depth-first searches.
+Program builds graph like on picture below using breadth-first or depth-first search algorithms. Project uses Strategy pattern so search algorithm can be changed at any time. 
 
 ![alt text](https://dic.academic.ru/pictures/wiki/files/66/Breadth-first-tree.svg)
 
