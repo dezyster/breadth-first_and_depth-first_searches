@@ -24,7 +24,7 @@ public:
     std::set<std::shared_ptr<Node>, decltype(compareNodes)*>& getNeighbors();
     void printInfo();
 
-    bool operator<(const Node& other) { return m_key < other.m_key; }
+    bool operator<(const Node &other) { return m_key < other.m_key; }
 
     void clearNodes(std::shared_ptr<Node>);
 

@@ -5,7 +5,8 @@ bool compareNodes(const std::shared_ptr<Node> &a, const std::shared_ptr<Node> &b
      return *a < *b;
 };
 
-Node::Node(int key, std::shared_ptr<Node> otherNode): m_key{ key }, m_neighbors{ compareNodes }
+Node::Node(int key, std::shared_ptr<Node> otherNode)
+    : m_key{ key }, m_neighbors{ compareNodes }
 {
     m_neighbors.insert(otherNode);
 }

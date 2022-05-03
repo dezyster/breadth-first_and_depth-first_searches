@@ -18,9 +18,9 @@ protected:
     virtual std::shared_ptr<Node> getFromQueue() = 0;
 
 public:
-    SearchStrategy(){};
+    SearchStrategy() = default;
 
     std::shared_ptr<Node> searchByKey(std::shared_ptr<Node>, int);
 
-    virtual ~SearchStrategy(){};
+    virtual ~SearchStrategy() = default;
 };
